@@ -1,0 +1,12 @@
+td{
+ display: flex;
+ justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+ul{
+  text-align: justify;
+}
+.container {
+  font-family: cursive;
+}

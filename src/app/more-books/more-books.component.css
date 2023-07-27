@@ -1,0 +1,18 @@
+.btn-mk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.bk7{
+  background-image: url("https://images.pexels.com/photos/4861352/pexels-photo-4861352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 10px;
+}
+p, .text{
+  color: rgb(15, 15, 14);
+}
+.sec{
+  font-size: larger;
+}

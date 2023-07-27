@@ -1,0 +1,26 @@
+.our {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.container {
+  color: aliceblue;
+  margin: 10px auto;
+  top: 38%;
+  left: 50%;
+  width: 500px;
+  padding: 30px 32px;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  background-image: url("https://www.stockvault.net/data/2019/09/24/269564/preview16.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+small{
+  color: red;
+}

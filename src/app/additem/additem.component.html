@@ -1,0 +1,44 @@
+
+    <div class="bg-img bck3">
+        <div class="content ">
+            <header class="hdr">Add Your Books</header>
+            <form >
+                <div class="container my-2 ">
+                  <div class="field mb-5">
+                    <label for="title">Book Id:</label>
+                    <input type="text" class="form-control" name="tx1" id="tx" [(ngModel)]="tx">
+                  </div>
+                  <div class="field mb-5">
+                    <label for="title">Book Name:</label>
+                    <input type="text" class="form-control" name="name" id="nm" [(ngModel)]="nm">
+                  </div>
+                  <div class="field mb-5">
+                    <label for="title">Book Type:</label>
+                    <input type="text" class="form-control" name="typ" id="ty" [(ngModel)]="ty">
+                  </div>
+
+                  <div class="field mb-5">
+                    <label for="title">Book Quantity:</label>
+                    <input type="text" class="form-control" name="quantity" id="qty" [(ngModel)]="qty">
+                  </div>
+                  <div class="field mb-5">
+                    <label for="title">Book Price:</label>
+                    <input type="text" class="form-control" name="price" id="pr" [(ngModel)]="pr">
+                  </div>
+                </div>
+
+                <div class="container">
+                  <button class="btn btn-xlg  text-light bg-success" type="button" (click)="storeproduct()">Add Book</button>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="col">
+      <div class="p-3 border bg-light" >
+
+        <app-list-product  [productlist]="productdata" (book)="deleteProduct($event)"></app-list-product>
+
+      </div>
+    </div>

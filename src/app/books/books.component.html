@@ -1,0 +1,54 @@
+<section class="py-5 text-center container sec">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="text">Books Example</h1>
+      <p class="text">“We are of opinion that instead of letting books grow moldy behind an iron grating, far
+        from the vulgar gaze, it is better to let them wear out by being read.”.
+        <br>
+        -Jules Verne (French novelist, poet, and playwright)
+      </p>
+      <p>
+        <a routerLink="#" class="btn btn-primary my-2">Paper Books</a>
+        <a routerLink="#" class="btn btn-secondary my-2">E-Books</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="bk7 album py-5 ">
+  <div class="container">
+
+    
+
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-4">
+
+
+      <ng-container *ngFor="let book of books" >
+        <div class="book-container">
+          <div class="book-card">
+            <div>
+              <img [src]="book.image" id="img1" >
+            </div>
+            <div class="book-name">
+              <h4>{{book.name}}</h4>
+            </div>
+            <div class="details">
+              <div class="book-type">Type : {{book.type}}</div>
+              <div class="book-price">Price: {{book.price | currency : 'INR'}}</div>
+            </div>
+            <div class="book-buttons">
+              <button class="btn btn-buy bg-success btn-sm me-3 m-2">Add</button>
+              <button class="btn btn-show bg-warning btn-sm me-3"  routerLink="/book-details/{{book.id}}" >View</button>
+            </div>
+          </div>
+        </div>
+        
+        </ng-container>
+    </div>
+
+  </div>
+</div>
+<div class="btn-mk my-4  ">
+ <a routerLink="/books"><button type="button" class="btn btn-lg btn-outline-dark text-dark bg-light">Previous</button></a>
+  <a routerLink="/more-books"><button type="button" class="btn btn-lg btn-outline-dark ms-2 text-dark bg-light">Next</button></a>
+</div>

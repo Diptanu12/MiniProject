@@ -1,0 +1,23 @@
+.dip{
+
+
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(252, 132, 158) 30%,
+    rgb(240, 105, 105) 70%
+  );
+
+
+}
+.search{
+  width: 50%;
+  margin: 10px auto ;
+  margin-bottom: 10px;
+}
+.navbar{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+

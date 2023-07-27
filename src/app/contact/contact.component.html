@@ -1,0 +1,68 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="https://www.netlabindia.com/wp-content/uploads/2018/06/contact-us-banner.jpg"
+        class="d-block w-100" alt="..." height="300">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container bck4 my-5 p-4 ">
+  <h2 style="text-align: center;">Contact Us</h2>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="form-group">
+      <label for="FormControlInput1">Name</label>
+      <input type="email" name="nm" class="form-control" id="nm" ngModel placeholder="Type Your Name Here" required #nm="ngModel">
+      <div>
+        <small *ngIf="nm.invalid && nm.touched">Name is a required field</small>
+      </div>
+     
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="FormControlInput2">Phone Number</label>
+      <input type="text" name="ph" class="form-control" ngModel id="ph" placeholder="Enter Your Number Here" required #ph="ngModel">
+      <div>
+        <small *ngIf="ph.invalid && ph.touched">Phone Number is a required field</small>
+      </div>
+    </div>
+    <br>
+
+
+    <div class="form-group">
+      <label for="FormControlInput3">Email address</label>
+      <input type="text" name="eml" class="form-control" id="eml" placeholder="name@example.com" ngModel required email >
+
+    </div>
+    <br>
+
+
+    <div class="form-group">
+      <label for="FormControlInput4">Write to Us</label>
+      <br>
+
+
+      <textarea id="ara" name="ara" cols="45" class="form-control" rows="2" placeholder="Tell Us something about you" [(ngModel)]="ara" required></textarea>
+    </div>
+    <br>
+
+
+    <div>
+      <button type="submit" class="btn btn-success" [disabled]="!contactForm.valid">Submit</button>
+    </div>
+  </form>
+
+</div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="http://www.smtpprovidermumbai.com/wp-content/uploads/customer-support.jpg"
+        class="d-block w-100" alt="..." height="300">
+    </div>
+  </div>
+</div>

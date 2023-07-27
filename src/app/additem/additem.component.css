@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+  margin: 10px auto;
+    top: 38%;
+    left: 50%;
+    transform: translate(auto);
+    width: 400px;
+    padding: 30px 32px;
+    background-color: rgba(226, 32, 32, 0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+}
+
+.content header {
+    color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 0 3px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.field {
+    height: 20px;
+    width: 100%;
+    color: rgb(2, 2, 19);
+    font-size: large;
+    font-weight: bold;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    background: lightgray;
+    border: 1px solid;
+    outline: none;
+    color: #131111;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 17px;
+}
+
+.field {
+    margin-top: 12px;
+}
+.hdr{
+   text-align: center;
+   background-color:rgb(198, 226, 235);
+   font-family: cursive;
+
+}
+.form-label{
+  color: aliceblue;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 8px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 3px;
+
+
+}
+.bck3{
+  background-image: url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}

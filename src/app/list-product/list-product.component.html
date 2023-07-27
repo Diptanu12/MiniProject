@@ -1,0 +1,75 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="https://www.thehowe.org/wp-content/uploads/2023/02/Book-Banner.jpg"
+        class="d-block w-100" alt="..." height="150" >
+    </div>
+  </div>
+</div>
+
+
+<div class="searchbox">
+  <form class="d-flex justify-content-end my-3">
+    <input class="form-control me-2" type="search" name="srch" [(ngModel)]="srch" placeholder="Search Product Name"
+      aria-label="Search">
+    <button type="button" class="btn btn-outline-primary" type="button" (click)="searchbook()">Search</button>
+  </form>
+</div>
+
+
+<table class="table table-striped table-hover table-success bg-light my-3">
+  <thead>
+    <tr>
+      <th scope="col">Select</th>
+      <th scope="col">Product ID</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Product Type</th>
+      <th scope="col">Product Quantity</th>
+      <th scope="col">Product Price</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-template [ngIf]="!srch">
+      <tr *ngFor="let a of productlist">
+        <td> <form><input type="checkbox"  (change)="chk(a)"/> </form> </td>
+        <td [ngStyle]="{color: 'Blue'}">{{a.tx}}</td>
+        <td [ngStyle]="{color: a.pr>500? 'Green' : 'Red'}">{{a.nm}}</td>
+        <td [ngStyle]="{color: 'Black'}">{{a.ty}}</td>
+        <td [ngStyle]="{color: 'Maroon'}">{{a.qty}}</td>
+        <td [ngStyle]="{color: 'Purple'}">{{a.pr | currency : 'INR'}}</td>
+        <td><Button class="btn btn-warning">More</Button>
+
+          <button class="btn btn-danger ms-2" (click)="deleteItem(a)">Delete</button>
+        </td>
+      </tr>
+    </ng-template>
+    <ng-template [ngIf]="srch">
+      <tr *ngFor="let a of srchdata">
+        <td> <form><input type="checkbox"  (change)="chk(a)"/> </form> </td>
+        <td [ngStyle]="{color: 'Blue'}">{{a.tx}}</td>
+        <td [ngStyle]="{color: a.pr>500? 'Green' : 'Red'}">{{a.nm}}</td>
+        <td [ngStyle]="{color: 'Black'}">{{a.ty}}</td>
+        <td [ngStyle]="{color: 'Maroon'}">{{a.qty}}</td>
+        <td [ngStyle]="{color: 'Purple'}">{{a.pr | currency : 'INR'}}</td>
+        <td><Button class="btn btn-warning">More</Button>
+
+          <button class="btn btn-danger ms-2" (click)="deleteItem(a)">Delete</button>
+        </td>
+      </tr>
+    </ng-template>
+  </tbody>
+</table>
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="https://ianrhr.unl.edu/image/library-banner.png"
+        class="d-block w-100" alt="..." height="150">
+    </div>
+  </div>
+</div>
+

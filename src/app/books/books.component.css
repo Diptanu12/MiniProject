@@ -1,0 +1,48 @@
+
+ .btn-mk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+} 
+.bk7{
+  background-image: url("https://images.pexels.com/photos/4861352/pexels-photo-4861352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 10px;
+}
+.book-card{
+background-color: #a9ccbf;
+}
+#img1{
+  width: 100%;
+  height: 220px;
+}
+
+p, .text{
+  color: rgb(15, 15, 14);
+  font-family: cursive;
+}
+
+.sec{
+  font-size: larger;
+  }
+  .book-name{
+    text-align: center;
+  }
+.book-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.book-type {
+  margin: 0px 5px;
+  font-family: cursive;
+  font-size: large;
+}
+.book-price {
+  margin: 0px 5px;
+  font-family: cursive;
+  font-size: large;
+}

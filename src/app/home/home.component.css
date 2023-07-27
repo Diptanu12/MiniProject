@@ -1,0 +1,15 @@
+.img2{
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+p{
+  text-align: justify;
+  color: black;
+
+}
+h5{
+  color: black;
+  font-weight: bold;
+}
