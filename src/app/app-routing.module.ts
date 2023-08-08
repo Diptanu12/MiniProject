@@ -10,14 +10,14 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 
 const routes: Routes = [
 
-  { path: 'home', component: HomeComponent },
+ 
   { path: 'about', component: AboutComponent },
   { path: 'Books', component: BooksComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'additem', component: AdditemComponent },
   {path: 'more-books', component: MoreBooksComponent},
   {path: 'book-details/:id', component: BookDetailsComponent},
-    { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent },
 ];
 
 @NgModule({
